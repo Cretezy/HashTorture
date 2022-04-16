@@ -6,7 +6,7 @@ const Button: ChakraTheme["components"]["Button"] = {
   },
   variants: {
     solid: {
-      border: "3px solid #fff",
+      border: "3px solid #aaa",
       p: 8,
       borderRadius: 0,
     },
@@ -15,6 +15,9 @@ const Button: ChakraTheme["components"]["Button"] = {
 
 const Modal: ChakraTheme["components"]["Modal"] = {
   baseStyle: {
+    dialog: {
+      bg: "#111",
+    },
     header: {
       textAlign: "center",
       p: 8,
@@ -39,6 +42,7 @@ export const theme = extendTheme({
     global: {
       body: {
         bg: "black",
+        color: "white",
       },
     },
   },
